@@ -6,14 +6,14 @@
   "scripts": {
     "test": "mocha",
     "start": "scm",
-    "docker:build:prod-canary": "docker build --target=production -t apowers313/fido2-server:prod-canary .",
-    "docker:build:test-canary": "docker build --target=test -t apowers313/fido2-server:test-canary .",
-    "docker:test:canary": "docker run apowers313/fido2-server:test-canary",
-    "docker:build:release": "docker build --target=test -t apowers313/fido2-server:test . && docker run apowers313/fido2-server:test && docker build --target=production -t apowers313/fido2-server:latest .",
-    "docker:test:canary": "docker run apowers313/fido2-server:test-canary",
+    "docker:build:prod-canary": "docker build --target=production -t yuki1967/fido2-server:prod-canary .",
+    "docker:build:test-canary": "docker build --target=test -t yuuki1967/fido2-server:test-canary .",
+    "docker:test:canary": "docker run yuuki1967/fido2-server:test-canary",
+    "docker:build:release": "docker build --target=test -t yuki1967/fido2-server:test . && docker run yuki1967/fido2-server:test && docker build --target=production -t yuki1967/fido2-server:latest .",
+    "docker:test:canary": "docker run yuki1967/fido2-server:test-canary",
     "docker:login": "echo \"$DOCKER_PASSWORD\" | docker login -u \"$DOCKER_USERNAME\" --password-stdin",
-    "docker:release:canary": "docker push apowers313/fido2-server:test-canary && docker push apowers313/fido2-server:prod-canary",
-    "docker:release": "docker push apowers313/fido2-server:test && docker push apowers313/fido2-server:latest"
+    "docker:release:canary": "docker push yuki1967/fido2-server:test-canary && docker push yuki1967/fido2-server:prod-canary",
+    "docker:release": "docker push yuuki1967/fido2-server:test && docker push yuki1967/fido2-server:latest"
   },
   "keywords": [
     "fido",
@@ -25,10 +25,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/apowers313/fido2-server-demo.git"
+    "url": "git+https://github.com/yuuki1967/fido2-server-demo.git"
   },
   "bugs": {
-    "url": "https://github.com/apowers313/fido2-server-demo/issues",
+    "url": "https://github.com/yuuki1967/fido2-server-demo/issues",
     "email": "apowers@ato.ms"
   },
   "devDependencies": {
@@ -49,7 +49,7 @@
     "component-web": "^1.0.1",
     "simple-component-manager": "^1.0.4"
   },
-  "homepage": "https://github.com/apowers313/fido2-server-demo#readme",
+  "homepage": "https://github.com/yuuki1967/fido2-server-demo#readme",
   "directories": {
     "lib": "lib",
     "test": "test"

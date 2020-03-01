@@ -1,6 +1,6 @@
 # production app
 FROM node:10 as production
-LABEL maintainer="apowers@ato.ms"
+LABEL maintainer="yuki06.endo@gmail.com"
 WORKDIR /usr/src/app
 COPY package.json scm-config.json /usr/src/app/
 COPY webauthn-yubiclone/ /usr/src/app/webauthn-yubiclone/
@@ -12,7 +12,7 @@ ENTRYPOINT ["npm", "start"]
 
 # dev / testing
 FROM node:10 as test
-LABEL maintainer="apowers@ato.ms"
+LABEL maintainer="yuki06.endo@gmail.com"
 WORKDIR /usr/src/app
 COPY --from=production /usr/src/app/ /usr/src/app/
 COPY test/ /usr/src/app/test/
