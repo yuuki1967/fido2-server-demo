@@ -3,4 +3,4 @@
 	url = git@github.com:yuuki1967/webauthn-yubiclone.git
 [submodule "fido2-swagger"]
 	path = fido2-swagger
-	url = git@github.com:uuki1967/fido2-swagger
+	url = git@github.com:yuuki1967/fido2-swagger
